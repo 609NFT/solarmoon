@@ -1,3 +1,3 @@
 export { HomeView } from "./home";
-export { BasicsView } from "./basics";
+export { StatsView } from "./stats";
 export { DomainsView } from "./domains";

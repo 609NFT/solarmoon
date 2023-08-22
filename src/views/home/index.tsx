@@ -30,26 +30,29 @@ export const HomeView: FC = ({}) => {
   return (
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex flex-col">
-        {/*
-          <div className="mt-6">
-            <h1 className="text-center text-5xl font-bold bg-clip-text bg-gradient-to-br mb-4">
-              SolarMoon
-            </h1>
-          </div>
-  */}
-        <h1></h1>
         <div className="relative group">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-indigo-500 rounded-lg blur opacity-40 animate-tilt"></div>
           <div className="mockup-code bg-primary border-2 border-[#5252529f] p-6 my-2">
             <pre data-prefix=">">
               <code className="truncate">
                 <Typewriter
-                  text="$ sudo burn_more_solarmoon --to-supply-shock 🚀🌕."
+                  text="$ sudo burn_more_solarmoon 🚀🌕"
                   delay={100}
                 ></Typewriter>
               </code>
             </pre>
           </div>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            href="https://birdeye.so/token/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi?chain=solana"
+            rel="noreferrer"
+          >
+            <p className="buy_now">
+              <b>View Chart</b>
+            </p>
+          </a>
         </div>
       </div>
     </div>

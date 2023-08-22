@@ -69,8 +69,8 @@ export const AppBar: React.FC = () => {
               navigationStarts={() => setIsNavOpen(false)}
             />
             <NavElement
-              label="Docs"
-              href="/basics"
+              label="Stats"
+              href="/stats"
               navigationStarts={() => setIsNavOpen(false)}
             />
             <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6 " />
@@ -82,19 +82,13 @@ export const AppBar: React.FC = () => {
           >
             <div className="HAMBURGER-ICON space-y-2.5 ml-5">
               <div
-                className={`h-0.5 w-8 bg-purple-600 ${
-                  isNavOpen ? "hidden" : ""
-                }`}
+                className={`h-0.5 w-8 bg-white ${isNavOpen ? "hidden" : ""}`}
               />
               <div
-                className={`h-0.5 w-8 bg-purple-600 ${
-                  isNavOpen ? "hidden" : ""
-                }`}
+                className={`h-0.5 w-8 bg-white ${isNavOpen ? "hidden" : ""}`}
               />
               <div
-                className={`h-0.5 w-8 bg-purple-600 ${
-                  isNavOpen ? "hidden" : ""
-                }`}
+                className={`h-0.5 w-8 bg-white ${isNavOpen ? "hidden" : ""}`}
               />
             </div>
             <div
