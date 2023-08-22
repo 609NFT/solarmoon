@@ -21,7 +21,7 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
           <li>
             <Text
               variant="heading"
-              className="font-extrabold tracking-tighter text-center text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-fuchsia-500 mt-10"
+              className="font-extrabold tracking-tighter text-center mt-10"
             >
               Menu
             </Text>

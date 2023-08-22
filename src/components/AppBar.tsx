@@ -92,13 +92,13 @@ export const AppBar: React.FC = () => {
               />
             </div>
             <div
-              className={`absolute block h-0.5 w-8 animate-pulse bg-purple-600 ${
+              className={`absolute block h-0.5 w-8 animate-pulse bg-white ${
                 isNavOpen ? "" : "hidden"
               }`}
               style={{ transform: "rotate(45deg)" }}
             ></div>
             <div
-              className={`absolute block h-0.5 w-8 animate-pulse bg-purple-600 ${
+              className={`absolute block h-0.5 w-8 animate-pulse bg-white ${
                 isNavOpen ? "" : "hidden"
               }`}
               style={{ transform: "rotate(135deg)" }}
@@ -148,7 +148,7 @@ export const AppBar: React.FC = () => {
                       className="toggle"
                     />
                   </label>
-                  <NetworkSwitcher />
+                  {/*<NetworkSwitcher />*/}
                 </div>
               </li>
             </ul>
