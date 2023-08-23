@@ -19,6 +19,20 @@ body {
   background:#0E1019 !important;
 }
 
+@media screen and (min-width: 767px) {
+  .center {
+    margin-right:20px;
+    margin-bottom:20px;
+    margin-top:10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .center {
+    margin:20px;
+  }
+}
+
 .buy_now{
   text-align:center;
     background-color: white; /* Green */
@@ -43,7 +57,7 @@ body {
 }
 
 .relative.group{
-  margin-bottom:5rem;
+  margin-bottom:3rem;
   margin-top:2rem;
 }
 

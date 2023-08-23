@@ -36,7 +36,7 @@ export const HomeView: FC = ({}) => {
             <pre data-prefix=">">
               <code className="truncate">
                 <Typewriter
-                  text="$ sudo burn_more_solarmoon 🚀🌕"
+                  text="$ sudo burn_solarmoon 🚀🌕"
                   delay={100}
                 ></Typewriter>
               </code>

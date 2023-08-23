@@ -2,6 +2,9 @@ import { FC } from "react";
 import { SignMessage } from "../../components/SignMessage";
 import { SendTransaction } from "../../components/SendTransaction";
 import { SendVersionedTransaction } from "../../components/SendVersionedTransaction";
+import Holders from "components/getHolderData";
+import Witheld from "components/getWitheldAmount";
+import MoonPrice from "components/getMoonPrice";
 
 export const StatsView: FC = ({}) => {
   return (
@@ -18,7 +21,7 @@ export const StatsView: FC = ({}) => {
               <b>Total Supply:</b> 69,000,000,000
             </li>
             <li>
-              <b>Current Transfer Tax:</b> 5% (All Transactions 🔥 $MOON)
+              <b>Current Tax:</b> 5% (All Transactions 🔥 $MOON)
             </li>
             <li>
               <b>Liquidity Pool Burned:</b>{" "}
@@ -40,10 +43,16 @@ export const StatsView: FC = ({}) => {
                 FluxBeam
               </a>
             </li>
+            <li>
+              <Holders />
+            </li>
+            <li>
+              <Witheld />
+            </li>
+            {/*<li>
+              <MoonPrice />
+  </li>*/}
           </ul>
-          {/*<SignMessage />
-          <SendTransaction />
-          <SendVersionedTransaction />*/}
         </div>
       </div>
     </div>
