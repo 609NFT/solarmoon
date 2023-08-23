@@ -67,13 +67,13 @@ export const Footer: FC = () => {
                   Domains
                 </Link>
                 <Link
-                  href="https://rugcheck.xyz/tokens/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi"
+                  href="https://magiceden.io/marketplace/moon_landing"
                   target="_blank"
                   rel="noopener noreferrer"
                   passHref
                   className="text-secondary hover:text-white"
                 >
-                  Rug Check
+                  Collection
                 </Link>
               </div>
             </div>
@@ -142,6 +142,15 @@ export const Footer: FC = () => {
                   className="text-secondary hover:text-white"
                 >
                   Audit Status
+                </Link>
+                <Link
+                  href="https://rugcheck.xyz/tokens/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  passHref
+                  className="text-secondary hover:text-white"
+                >
+                  Rug Check
                 </Link>
               </div>
             </div>

@@ -1706,6 +1706,11 @@
     "bs58" "^5.0.0"
     "uuid" "^8.3.2"
 
+"@kurkle/color@^0.3.0":
+  "integrity" "sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw=="
+  "resolved" "https://registry.npmjs.org/@kurkle/color/-/color-0.3.2.tgz"
+  "version" "0.3.2"
+
 "@ledgerhq/devices@^6.27.1", "@ledgerhq/devices@6.27.1":
   "integrity" "sha512-jX++oy89jtv7Dp2X6gwt3MMkoajel80JFWcdc0HCouwDsV1mVJ3SQdwl/bQU0zd8HI6KebvUP95QTwbQLLK/RQ=="
   "resolved" "https://registry.npmjs.org/@ledgerhq/devices/-/devices-6.27.1.tgz"
@@ -5935,6 +5940,13 @@
   "integrity" "sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA=="
   "resolved" "https://registry.npmjs.org/chardet/-/chardet-0.7.0.tgz"
   "version" "0.7.0"
+
+"chart.js@^4.3.3":
+  "integrity" "sha512-aTk7pBw+x6sQYhon/NR3ikfUJuym/LdgpTlgZRe2PaEhjUMKBKyNaFCMVRAyTEWYFNO7qRu7iQVqOw/OqzxZxQ=="
+  "resolved" "https://registry.npmjs.org/chart.js/-/chart.js-4.3.3.tgz"
+  "version" "4.3.3"
+  dependencies:
+    "@kurkle/color" "^0.3.0"
 
 "check-error@^1.0.2":
   "integrity" "sha512-BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv+34syEZtc6IhLtA=="

@@ -10,11 +10,13 @@ import Container from "@mui/material/Container";
 export const StatsView: FC = ({}) => {
   return (
     <div className="stats_font">
-      <div className="row">
+      {/*<div className="row">
         <div className="col">
-          <p></p>
+          <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
         </div>
-      </div>
+  </div>*/}
       <div className="row">
         <div className="stats_1 col p-5 m-3">
           <div>
@@ -36,7 +38,7 @@ export const StatsView: FC = ({}) => {
                 <b>Current Tax:</b> 5%
               </li>
               <li>
-                <b>Liquidity Pool Burned:</b>{" "}
+                <b>Liquidity Pool Burn:</b>{" "}
                 <a
                   target="_blank"
                   rel="noreferrer"
