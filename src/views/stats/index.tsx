@@ -9,7 +9,7 @@ import Container from "@mui/material/Container";
 
 export const StatsView: FC = ({}) => {
   return (
-    <div>
+    <div className="stats_font">
       <div className="row">
         <div className="col">
           <p></p>
