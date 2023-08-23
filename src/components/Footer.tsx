@@ -58,11 +58,13 @@ export const Footer: FC = () => {
 
               <div className="flex flex-col mb-0 gap-2">
                 <Link
-                  href="/stats"
+                  href="https://alldomains.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   passHref
                   className="text-secondary hover:text-white"
                 >
-                  Burn Dash
+                  Domains
                 </Link>
                 <Link
                   href="https://rugcheck.xyz/tokens/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi"

@@ -63,10 +63,10 @@ export const AppBar: React.FC = () => {
         {/* Wallet & Settings */}
         <div className="navbar-end">
           <div className="hidden md:inline-flex align-items-center justify-items gap-6">
-            <a href="https://alldomains.id/" rel="noreferrer" target="_blank">
+            {/*<a href="https://alldomains.id/" rel="noreferrer" target="_blank">
               <p className="customNav">Domains</p>
             </a>
-            {/*<NavElement
+            <NavElement
               label="Domains"
               href="https://alldomains.id/"
               navigationStarts={() => setIsNavOpen(false)}
