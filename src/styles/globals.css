@@ -91,6 +91,13 @@ h5{
   background-color: green;
 }
 
+.p-6 {
+  padding-left: 0rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .buy_now{
   text-align:center;
     background-color: white; /* Green */
