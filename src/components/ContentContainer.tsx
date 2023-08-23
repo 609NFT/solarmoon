@@ -27,7 +27,11 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
             </Text>
           </li>
           <li>
-            <NavElement label="Home" href="/" />
+            <a href="https://alldomains.id/" rel="noreferrer" target="_blank">
+              <p className="customNav">Domains</p>
+            </a>
+
+            {/*<NavElement label="Domains" href="https://alldomains.id/" />*/}
           </li>
           <li>
             <NavElement label="Stats" href="/stats" />

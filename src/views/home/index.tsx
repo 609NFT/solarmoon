@@ -32,11 +32,11 @@ export const HomeView: FC = ({}) => {
       <div className="md:hero-content flex flex-col">
         <div className="relative group">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-indigo-500 rounded-lg blur opacity-40 animate-tilt"></div>
-          <div className="mockup-code bg-primary border-2 border-[#5252529f] p-6 my-2">
+          <div className="mockup-code border-2 border-[#5252529f] p-6 my-2">
             <pre data-prefix=">">
               <code className="truncate">
                 <Typewriter
-                  text="$ sudo burn_solarmoon 🚀🌕"
+                  text="$ sudo burn_solarmoon 🔥"
                   delay={100}
                 ></Typewriter>
               </code>

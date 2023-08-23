@@ -21,7 +21,7 @@ export const AppBar: React.FC = () => {
       {/* NavBar / Header */}
       <div className="navbar flex h-20 flex-row md:mb-2 shadow-lg bg- text-neutral-content border-b border-zinc-600 bg-opacity-66">
         <div className="navbar-start align-items-center">
-          <div className="hidden sm:inline w-22 h-22 md:p-2 ml-10">
+          <div className="w-22 h-22 main_logo">
             <Link
               href="/"
               rel="noopener noreferrer"
@@ -31,8 +31,8 @@ export const AppBar: React.FC = () => {
               <Image
                 src="/favicon.png"
                 alt="solarmoon logo"
-                width={75}
-                height={96}
+                width={60}
+                height={60}
               ></Image>
               <defs>
                 <linearGradient
@@ -63,11 +63,14 @@ export const AppBar: React.FC = () => {
         {/* Wallet & Settings */}
         <div className="navbar-end">
           <div className="hidden md:inline-flex align-items-center justify-items gap-6">
-            <NavElement
+            <a href="https://alldomains.id/" rel="noreferrer" target="_blank">
+              <p className="customNav">Domains</p>
+            </a>
+            {/*<NavElement
               label="Domains"
               href="https://alldomains.id/"
               navigationStarts={() => setIsNavOpen(false)}
-            />
+            />*/}
             <NavElement
               label="Stats"
               href="/stats"
@@ -104,7 +107,7 @@ export const AppBar: React.FC = () => {
               style={{ transform: "rotate(135deg)" }}
             ></div>
           </label>
-          <div>
+          {/*<div>
             <span className="absolute block h-0.5 w-12 bg-zinc-600 rotate-90 right-14"></span>
           </div>
           <div className="dropdown dropdown-end">
@@ -148,11 +151,11 @@ export const AppBar: React.FC = () => {
                       className="toggle"
                     />
                   </label>
-                  {/*<NetworkSwitcher />*/}
+                  <NetworkSwitcher />
                 </div>
               </li>
             </ul>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

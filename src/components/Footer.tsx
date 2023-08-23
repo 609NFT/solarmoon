@@ -58,9 +58,7 @@ export const Footer: FC = () => {
 
               <div className="flex flex-col mb-0 gap-2">
                 <Link
-                  href="https://solarmoon.space/burn"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/stats"
                   passHref
                   className="text-secondary hover:text-white"
                 >
@@ -79,7 +77,7 @@ export const Footer: FC = () => {
             </div>
 
             <div className="mb-6 items-center mx-auto max-w-screen-lg">
-              <div className="font-normal capitalize mb-2.5">TOKENS</div>
+              <h5 className="font-normal capitalize mb-2.5">TOKENS</h5>
 
               <div className="flex flex-col mb-0 gap-2">
                 <Link
