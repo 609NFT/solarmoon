@@ -39,6 +39,29 @@ body {
   background:black;
 }
 
+.navbar-toggler-icon {
+  background-image: url("../../public/hamburger.png") !important;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0;
+    border-bottom:.5px solid #808080;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.nav-items,.nav-link{
+  color:white!important;
+}
+
 @media screen and (min-width: 575px) {
   .main_logo{
     margin-left:40px;
@@ -53,19 +76,9 @@ body {
   }
 }
 
-.customNav{
-  font-size:1.25rem;
-  font-weight:500px;
-  line-height:1.75rem;
-}
-
 
 h5{
   color:white;
-}
-
-.navbar{
-  background:#0E1019 !important;
 }
 
 @media screen and (min-width: 767px) {
@@ -86,17 +99,6 @@ h5{
   .wallet-adapter-button{
     display:none;
   }
-}
-
-#myProgress {
-  width: 100%;
-  background-color: grey;
-}
-
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: green;
 }
 
 .p-6 {
@@ -135,6 +137,10 @@ h5{
 
 .footer{
   background:#0E1019 !important;
+}
+
+.navigation{
+  background: #0E1019 !important;
 }
 
 a {

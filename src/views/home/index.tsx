@@ -2,6 +2,7 @@
 import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 import Typewriter from "../../components/Typewriter";
+import "bootstrap/dist/css/bootstrap.css";
 
 // Wallet
 import { useWallet, useConnection } from "@solana/wallet-adapter-react";
@@ -12,6 +13,7 @@ import pkg from "../../../package.json";
 
 // Store
 import useUserSOLBalanceStore from "../../stores/useUserSOLBalanceStore";
+import MoonPrice from "components/getMoonPrice";
 
 export const HomeView: FC = ({}) => {
   const wallet = useWallet();

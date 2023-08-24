@@ -22,6 +22,7 @@ function MoonPrice() {
         });
     }
   }, [price]);
+
   return (
     <div>
       <b>$MOON Price: </b>
