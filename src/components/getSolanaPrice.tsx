@@ -1,27 +1,34 @@
 import axios from "axios";
 import { useState } from "react";
 
+let timer = 0;
+
 function SolPrice() {
   const [price, setPrice] = useState(0);
-  //const saved = localStorage.getItem("solPrice");
-  //const initialValue = JSON.parse(saved);
+  const saved = localStorage.getItem("solPrice");
+  let initialValue = JSON.parse(saved);
 
-  /*if (initialValue.length() > 1) {
-    alert("hello");
-    alert(initialValue.toFixed(2));
-    return <div>{initialValue.toFixed(2)}</div>;
-  }*/
+  if (initialValue === null && timer === 0) {
+    axios
+      .get(
+        "https://public-api.birdeye.so/public/price?address=So11111111111111111111111111111111111111112"
+      )
+      .then(function (response) {
+        console.log(response);
+        //localStorage.setItem("solPrice", JSON.stringify(price));
+        //initialValue = price;
+        //alert(initialValue);
 
-  axios
-    .get(
-      "https://public-api.birdeye.so/public/price?address=So11111111111111111111111111111111111111112"
-    )
-
-    .then((res) => {
-      setPrice(res.data.data.value);
-      localStorage.setItem("solPrice", JSON.stringify(price));
-    });
-  return <div>{price.toFixed(2)}</div>;
+        timer = 1;
+        /*setTimeout(function () {
+          setPrice(res.data.data.value);
+          alert(price);
+        }, 5000);*/
+      });
+  }
+  //alert(initialValue);
+  //return <div>{initialValue.toFixed(2)}</div>;
+  return <div>value</div>;
 }
 
 export default SolPrice;
