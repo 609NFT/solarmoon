@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 
 function Witheld() {
   const [witheld, setWitheld] = useState(0);
+  const [loading, setLoading] = useState(false);
   let percent = 0;
   let remaining = 0;
   let remainingPercent = 0;
@@ -12,12 +13,16 @@ function Witheld() {
     if (shouldLog.current) {
       shouldLog.current = false;
       // STUFF ONLY HAPPENS ONCE
+      // Before calling the API
+      setLoading(true);
       axios
         .get(
           "https://api.fluxbeam.xyz/v1/tokens/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi/withheld"
         )
         .then((res) => {
           setWitheld(res.data.withheldAmount.amount);
+          // After response is received
+          setLoading(false);
         });
     }
   }, [witheld]);
@@ -31,11 +36,13 @@ function Witheld() {
     <div>
       <div>
         <b>Total Burned: </b>
-        {burned.toLocaleString()} ({percent.toFixed(2)}%)
+        {loading ? <>Loading...</> : burned.toLocaleString()} (
+        {loading ? <>Loading...</> : percent.toFixed(2)}%)
       </div>
       <div>
         <b>Remaining Supply: </b>
-        {remaining.toLocaleString()} ({remainingPercent.toFixed(2)}%)
+        {loading ? <>Loading...</> : remaining.toLocaleString()} (
+        {loading ? <>Loading...</> : remainingPercent.toFixed(2)}%)
       </div>
     </div>
   );
