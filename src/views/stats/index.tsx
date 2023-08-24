@@ -5,7 +5,7 @@ import { SendVersionedTransaction } from "../../components/SendVersionedTransact
 import Holders from "components/getHolderData";
 import Witheld from "components/getWitheldAmount";
 import MoonPrice from "components/getMoonPrice";
-import Container from "@mui/material/Container";
+import AllHolders from "components/getTopHolders";
 
 export const StatsView: FC = ({}) => {
   return (
@@ -38,13 +38,13 @@ export const StatsView: FC = ({}) => {
                 <b>Current Tax:</b> 5%
               </li>
               <li>
-                <b>Liquidity Pool Burn:</b>{" "}
+                <b>Liquidity Pool 🔥:</b>{" "}
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://solscan.io/tx/4WBgzYDpyf6e3h4CT8kXnAMAfXpi8kKxaakTALz2pj67cR7DbbUtpc2JpCKrTEERRiXpMRexMGFmDrCokBBHBM7B"
                 >
-                  🔥 TXN
+                  TXN
                 </a>
               </li>
               <li>
@@ -86,6 +86,7 @@ export const StatsView: FC = ({}) => {
               <li>
                 <Witheld />
               </li>
+              <li>{/*<AllHolders />*/}</li>
             </ul>
           </div>
         </div>

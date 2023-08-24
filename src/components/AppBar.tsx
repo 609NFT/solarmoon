@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { useAutoConnect } from "../contexts/AutoConnectProvider";
 import NetworkSwitcher from "./NetworkSwitcher";
 import NavElement from "./nav-element";
+import SolPrice from "./getSolanaPrice";
 
 const WalletMultiButtonDynamic = dynamic(
   async () =>
@@ -33,30 +34,21 @@ export const AppBar: React.FC = () => {
                 alt="solarmoon logo"
                 width={60}
                 height={60}
+                priority={true}
               ></Image>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_1064_606"
-                  x1="10.81"
-                  y1="98.29"
-                  x2="98.89"
-                  y2="-1.01005"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0.08" stopColor="#9945FF" />
-                  <stop offset="0.3" stopColor="#8752F3" />
-                  <stop offset="0.5" stopColor="#5497D5" />
-                  <stop offset="0.6" stopColor="#43B4CA" />
-                  <stop offset="0.72" stopColor="#28E0B9" />
-                  <stop offset="0.97" stopColor="#19FB9B" />
-                </linearGradient>
-                <clipPath id="clip0_1064_606">
-                  <rect width="646" height="96" fill="white" />
-                </clipPath>
-              </defs>
             </Link>
           </div>
-          <WalletMultiButtonDynamic className="btn-ghost btn-sm relative flex md:hidden text-lg " />
+          <div>
+            <Image
+              src="/solana.png"
+              alt="solana logo"
+              width={14}
+              height={14}
+            ></Image>
+          </div>
+          <div className="ml-1">
+            <SolPrice></SolPrice>
+          </div>
         </div>
 
         {/* Nav Links */}
