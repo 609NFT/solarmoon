@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const config = {
   headers: {
@@ -10,14 +10,22 @@ const config = {
 
 function Holders() {
   const [holders, setHolders] = useState(0);
-  axios
-    .get(
-      "https://public-api.solscan.io/token/holders?tokenAddress=2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi&limit=2&offset=0",
-      config
-    )
-    .then((res) => {
-      setHolders(res.data.total);
-    });
+
+  const shouldLog = useRef(true);
+  useEffect(() => {
+    if (shouldLog.current) {
+      shouldLog.current = false;
+      // STUFF ONLY HAPPENS ONCE
+      axios
+        .get(
+          "https://public-api.solscan.io/token/holders?tokenAddress=2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi&limit=2&offset=0",
+          config
+        )
+        .then((res) => {
+          setHolders(res.data.total);
+        });
+    }
+  }, [holders]);
   return (
     <div>
       <b>Total Holders: </b>
