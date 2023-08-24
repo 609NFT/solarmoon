@@ -3,11 +3,12 @@ import { useState } from "react";
 
 function SolPrice() {
   const [price, setPrice] = useState(0);
-  /*const saved = localStorage.getItem("solPrice");
-  const initialValue = JSON.parse(saved);
+  //const saved = localStorage.getItem("solPrice");
+  //const initialValue = JSON.parse(saved);
 
-  if (initialValue.length > 1) {
-    
+  /*if (initialValue.length() > 1) {
+    alert("hello");
+    alert(initialValue.toFixed(2));
     return <div>{initialValue.toFixed(2)}</div>;
   }*/
 

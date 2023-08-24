@@ -17,6 +17,16 @@ const WalletMultiButtonDynamic = dynamic(
 export const AppBar: React.FC = () => {
   const { autoConnect, setAutoConnect } = useAutoConnect();
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  //const saved = localStorage.getItem("solPrice");
+  //const initialValue = JSON.parse(saved);
+
+  alert("hello");
+  /*if (initialValue.length > 1) {
+    alert(initialValue.toFixed(2));
+    return <div>{initialValue.toFixed(2)}</div>;
+  }*/
+
   return (
     <div>
       {/* NavBar / Header */}
@@ -46,9 +56,9 @@ export const AppBar: React.FC = () => {
               height={14}
             ></Image>
           </div>
-          <div className="ml-1">
+          {/*<div className="ml-1">
             <SolPrice></SolPrice>
-          </div>
+  </div>*/}
         </div>
 
         {/* Nav Links */}
