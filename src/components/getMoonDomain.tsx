@@ -7,12 +7,11 @@ const RPC_URL = "https://api.mainnet-beta.solana.com";
 const connection = new Connection(RPC_URL);
 
 // get the all the domains of owned by a user public key
-async function getOwnerDomains(owner, tld) {
+async function getOwnerDomains(owner) {
   // initialize a Tld Parser
   const parser = new TldParser(connection);
 
-  // list of name record header publickeys owned by user in a tld
-  const ownedTldDomains = await parser.getAllUserDomainsFromTld(owner, tld);
+  // list of name record header public keys owned by a user
   const domainRecordPks = await parser.getAllUserDomains(owner);
   let domains = [];
   for (var recordPubkey of domainRecordPks) {
@@ -28,13 +27,20 @@ async function getOwnerDomains(owner, tld) {
       nameRecord.parentName
     );
 
+    //get the tld
+    const tld = await parser.getTldFromParentAccount(nameRecord.parentName);
+
     //get the domain in string form
     const domain = await parser.reverseLookupNameAccount(
       recordPubkey,
       parentNameRecord?.owner
     );
 
-    domains.push(`${domain}.${tld}`);
+    domains.push(`${domain}${tld}`);
   }
+
   return domains;
 }
+
+//get the all owner domains
+getOwnerDomains(new PublicKey(""));

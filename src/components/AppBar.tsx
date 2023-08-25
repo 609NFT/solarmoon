@@ -35,8 +35,8 @@ export const AppBar: React.FC = () => {
               <Image
                 src="/favicon.png"
                 alt="solarmoon logo"
-                width={60}
-                height={60}
+                width={40}
+                height={40}
                 priority={true}
               ></Image>
             </Link>
