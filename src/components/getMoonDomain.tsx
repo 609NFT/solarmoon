@@ -1,7 +1,8 @@
 import { TldParser, NameRecordHeader } from "@onsol/tldparser";
 import { Connection, PublicKey } from "@solana/web3.js";
 
-const RPC_URL = "https://api.mainnet-beta.solana.com";
+const RPC_URL =
+  "https://frosty-sly-general.solana-mainnet.discover.quiknode.pro/f9e0599deb8c35188cc545edbdbd2aabc8a5dc85/";
 
 // initialize a Solana Connection
 const connection = new Connection(RPC_URL);
@@ -43,4 +44,5 @@ async function getOwnerDomains(owner) {
 }
 
 //get the all owner domains
-getOwnerDomains(new PublicKey(""));
+getOwnerDomains("");
+//getOwnerDomains(new PublicKey(""));
