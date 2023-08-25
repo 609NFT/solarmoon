@@ -30,7 +30,7 @@ function SolPrice() {
   //localStorage.setItem("solPrice", JSON.stringify(price));
   //return <div>{initialValue.toFixed(2)}</div>;
 
-  return <div>{loading ? <>Loading...</> : price.toFixed(2)}</div>;
+  return <div>{loading ? <>Loading..</> : price.toFixed(2)}</div>;
 }
 
 export default SolPrice;

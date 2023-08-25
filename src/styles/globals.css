@@ -17,9 +17,13 @@ body {
     rgba(14,16,25, 0.6) 55%,
     rgba(119,137,135, 0.4));
     background: rgba(119,137,135);*/
-    background-image:url("../../public/space.jpg");
+    background-image:url("../../public/test.jpeg");
   background-size: cover;
 
+}
+
+.border-t-2 {
+  border-top-width: 1px;
 }
 
 .stats_font{
@@ -40,12 +44,22 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-image: url("../../public/hamburger.png") !important;
+  background-image: url("../../public/moon.png") !important;
 }
 
 .navbar{
     --bs-navbar-padding-y: 0;
     border-bottom:.5px solid #808080;
+}
+
+.solana_logo{
+  margin-right:5px;
+}
+
+@media screen and (max-width: 992px) {
+  .solana_price{
+    display:none;
+  }
 }
 
 .navbar-toggler {

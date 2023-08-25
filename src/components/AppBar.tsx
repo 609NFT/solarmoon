@@ -9,6 +9,7 @@ import NavElement from "./nav-element";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import SolPrice from "./getSolanaPrice";
 
 const WalletMultiButtonDynamic = dynamic(
   async () =>
@@ -41,9 +42,22 @@ export const AppBar: React.FC = () => {
             </Link>
           </div>
         </Navbar.Brand>
+        <div className="solana_price">
+          <Image
+            src="/solana.png"
+            alt="solana logo"
+            width={14}
+            height={14}
+            className="solana_logo"
+          ></Image>
+        </div>
+        <div className="solana_price">
+          <SolPrice />
+        </div>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ml-auto">
             <Nav.Link>
               <NavElement
                 label="Stats"
@@ -51,8 +65,9 @@ export const AppBar: React.FC = () => {
                 navigationStarts={() => setIsNavOpen(false)}
               />
             </Nav.Link>
+
             <Nav.Link className="ml-auto">
-              <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg ml-auto" />
+              <WalletMultiButtonDynamic className="btn-ghost solana_price btn-sm rounded-btn text-lg ml-auto" />
             </Nav.Link>
             {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
