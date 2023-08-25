@@ -33,7 +33,7 @@ function Holders() {
   return (
     <div>
       <b>Total Holders: </b>
-      {loading ? <>Loading...</> : holders}
+      {loading ? <>Loading..</> : holders}
     </div>
   );
 }

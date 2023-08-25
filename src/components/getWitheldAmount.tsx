@@ -36,13 +36,13 @@ function Witheld() {
     <div>
       <div>
         <b>Total Burned: </b>
-        {loading ? <>Loading...</> : burned.toLocaleString()} (
-        {loading ? <>Loading...</> : percent.toFixed(2)}%)
+        {loading ? <>Loading..</> : burned.toLocaleString()} (
+        {loading ? <>Loading..</> : percent.toFixed(2)}%)
       </div>
       <div>
         <b>Remaining Supply: </b>
-        {loading ? <>Loading...</> : remaining.toLocaleString()} (
-        {loading ? <>Loading...</> : remainingPercent.toFixed(2)}%)
+        {loading ? <>Loading..</> : remaining.toLocaleString()} (
+        {loading ? <>Loading..</> : remainingPercent.toFixed(2)}%)
       </div>
     </div>
   );

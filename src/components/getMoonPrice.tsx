@@ -26,7 +26,7 @@ function MoonPrice() {
   return (
     <div>
       <b>$MOON Price: </b>
-      {loading ? <>Loading...</> : price}
+      {loading ? <>Loading..</> : price}
     </div>
   );
 }
