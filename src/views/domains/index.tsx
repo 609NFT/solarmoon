@@ -4,9 +4,11 @@ import { SendTransaction } from "../../components/SendTransaction";
 import { SendVersionedTransaction } from "../../components/SendVersionedTransaction";
 import { TldParser } from "@onsol/tldparser";
 import { Connection } from "@solana/web3.js";
+import { useEffect } from "react";
 
 export const DomainsView: FC = ({}) => {
-  const RPC_URL = "https://api.mainnet-beta.solana.com";
+  const RPC_URL =
+    "https://frosty-sly-general.solana-mainnet.discover.quiknode.pro/f9e0599deb8c35188cc545edbdbd2aabc8a5dc85/";
 
   // initialize a Solana Connection
   const connection = new Connection(RPC_URL);
@@ -21,7 +23,7 @@ export const DomainsView: FC = ({}) => {
 
   //get the owner pubkey of "miester.abc";
   const brian = resolveDomain("609.abc");
-  alert(brian);
+  console.log(brian);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -30,7 +32,6 @@ export const DomainsView: FC = ({}) => {
           Domains
         </h1>
 
-        {/* CONTENT GOES HERE */}
         <div className="text-center"></div>
       </div>
     </div>

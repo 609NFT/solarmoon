@@ -114,6 +114,19 @@ h5{
   padding-bottom: 1rem;
 }
 
+.copy_button{
+text-align:center;
+    background-color: white; /* Green */
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color:black;
+    cursor: pointer;
+    border-radius:5px;
+    margin-left:5px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 .buy_now{
   text-align:center;
     background-color: white; /* Green */

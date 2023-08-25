@@ -6,8 +6,20 @@ import Holders from "components/getHolderData";
 import Witheld from "components/getWitheldAmount";
 import MoonPrice from "components/getMoonPrice";
 import AllHolders from "components/getTopHolders";
+import ReactDOM from "react-dom";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import Alert from "react-bootstrap/Alert";
+import { useState } from "react";
 
 export const StatsView: FC = ({}) => {
+  const [show, setShow] = useState(false);
+
+  if (show) {
+    alert("Copied. Now go buy some $MOON.");
+    setShow(false);
+    return <span></span>;
+  }
+
   return (
     <div className="stats_font">
       {/*<div className="row">
@@ -28,8 +40,13 @@ export const StatsView: FC = ({}) => {
                   rel="noreferrer"
                   href="https://solscan.io/token/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi"
                 >
-                  Address
+                  2kMpEJ...PvsWvi
                 </a>
+                <CopyToClipboard text="2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi">
+                  <button className="copy_button" onClick={() => setShow(true)}>
+                    Copy
+                  </button>
+                </CopyToClipboard>
               </li>
               <li>
                 <b>Total Supply:</b> 69,420,000,000
