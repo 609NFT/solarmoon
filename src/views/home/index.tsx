@@ -3,6 +3,7 @@ import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 import Typewriter from "../../components/Typewriter";
 import "bootstrap/dist/css/bootstrap.css";
+import Domains from "components/getMoonDomain";
 
 // Wallet
 import { useWallet, useConnection } from "@solana/wallet-adapter-react";
@@ -38,7 +39,7 @@ export const HomeView: FC = ({}) => {
             <pre data-prefix=">">
               <code className="truncate">
                 <Typewriter
-                  text="$ sudo burn_solarmoon 🔥"
+                  text="$ sudo burn solarmoon 🔥"
                   delay={100}
                 ></Typewriter>
               </code>

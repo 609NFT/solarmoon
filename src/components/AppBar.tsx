@@ -10,6 +10,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import SolPrice from "./getSolanaPrice";
+import WalletDetail from "./getWalletInfo";
 
 const WalletMultiButtonDynamic = dynamic(
   async () =>
@@ -33,10 +34,10 @@ export const AppBar: React.FC = () => {
               className="text-secondary hover:text-white"
             >
               <Image
-                src="/favicon.png"
+                src="/solarmoon_logo.png"
                 alt="solarmoon logo"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 priority={true}
               ></Image>
             </Link>
@@ -65,7 +66,9 @@ export const AppBar: React.FC = () => {
                 navigationStarts={() => setIsNavOpen(false)}
               />
             </Nav.Link>
-
+            {/*<Nav.Link>
+              <WalletDetail></WalletDetail>
+            </Nav.Link>*/}
             <Nav.Link className="ml-auto">
               <WalletMultiButtonDynamic className="btn-ghost solana_price btn-sm rounded-btn text-lg ml-auto" />
             </Nav.Link>
