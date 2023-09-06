@@ -11,15 +11,14 @@ body {
   /*font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;*/
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  /*background-image: radial-gradient(
-    circle farthest-side at 50% 100%,rgba(14,16,25, 0),
-    rgba(14,16,25, 0.6) 36%,
-    rgba(14,16,25, 0.6) 55%,
-    rgba(119,137,135, 0.4));
-    background: rgba(119,137,135);*/
-    background-image:url("../../public/test.jpeg");
-  background-size: cover;
+    background-color: #082827;
+    /*background-image:url("../../public/test.jpeg");
+  background-size: cover;*/
 
+}
+
+footer{
+  background-color:rgba(8, 40, 39);
 }
 
 .border-t-2 {
@@ -34,13 +33,13 @@ body {
   border:1px solid white;
   color:white;
   border-radius: 15px;
-  background:black;
+  background:#082827;
 }
 .stats_2{
   border:1px solid white;
   color:white;
   border-radius: 15px;
-  background:black;
+  background:#082827;
 }
 
 .navbar-toggler-icon {
@@ -49,7 +48,7 @@ body {
 
 .navbar{
     --bs-navbar-padding-y: 0;
-    border-bottom:.5px solid #808080;
+    /*border-bottom:.5px solid #808080;*/
 }
 
 .solana_logo{

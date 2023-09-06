@@ -33,6 +33,7 @@
     "daisyui": "^1.24.3",
     "date-fns": "^2.29.3",
     "immer": "^9.0.12",
+    "jquery": "^3.7.1",
     "mdb-react-ui-kit": "^6.2.0",
     "next": "^13.1.5",
     "next-compose-plugins": "^2.2.1",
