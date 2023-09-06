@@ -1,17 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { DomainsView } from "../views";
+import { TokenView } from "../views";
 
-const Domains: NextPage = (props) => {
+const Tokens: NextPage = (props) => {
   return (
     <div>
       <Head>
         <title>SolarMoon</title>
         <meta name="description" content="Solana's First Deflationary Token." />
       </Head>
-      <DomainsView />
+      <TokenView />
     </div>
   );
 };
 
-export default Domains;
+export default Tokens;

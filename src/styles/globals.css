@@ -17,8 +17,12 @@ body {
 
 }
 
+.tokenomics{
+  margin-top:40px;
+}
+
 footer{
-  background-color:rgba(8, 40, 39);
+  background-color:#082827;
 }
 
 .border-t-2 {
@@ -34,12 +38,14 @@ footer{
   color:white;
   border-radius: 15px;
   background:#082827;
+  box-shadow: 8px 8px;
 }
 .stats_2{
   border:1px solid white;
   color:white;
   border-radius: 15px;
   background:#082827;
+  box-shadow: 8px 8px;
 }
 
 .navbar-toggler-icon {

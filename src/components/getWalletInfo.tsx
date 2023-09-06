@@ -12,8 +12,8 @@ function WalletDetail() {
 
   return (
     <NavElement
-      label="Profile"
-      href="/domains"
+      label="Tokenomics"
+      href="/tokenomics"
       navigationStarts={() => setIsNavOpen(false)}
     />
   );
