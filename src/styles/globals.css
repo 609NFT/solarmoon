@@ -21,6 +21,13 @@ body {
   margin-top:40px;
 }
 
+@media screen and (max-width: 991px) {
+  .tokenomics{
+    width:400px;
+    height:400px;
+  }
+}
+
 footer{
   background-color:#082827;
 }
