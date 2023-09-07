@@ -8,7 +8,7 @@ export const TokenView: FC = ({}) => {
         src="/chart.svg"
         alt="tokenomics diagram"
         width={500}
-        height={500}
+        height={0}
         priority={true}
       ></Image>
     </div>

@@ -1,9 +1,9 @@
 // Next, React
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect } from "react";
 import Link from "next/link";
 import Typewriter from "../../components/Typewriter";
 import "bootstrap/dist/css/bootstrap.css";
-import Domains from "components/getMoonDomain";
+import Image from "next/image";
 
 // Wallet
 import { useWallet, useConnection } from "@solana/wallet-adapter-react";
@@ -47,7 +47,23 @@ export const HomeView: FC = ({}) => {
           </div>
         </div>
         <div>
-          <a
+          <Link
+            href="https://birdeye.so/token/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi?chain=solana"
+            target="_blank"
+            rel="noopener noreferrer"
+            passHref
+            className="text-secondary hover:text-white"
+          >
+            <Image
+              src="/logo-birdeye.png"
+              alt="birdeye logo"
+              width={150}
+              height={150}
+              priority={true}
+            ></Image>
+          </Link>
+
+          {/*<a
             target="_blank"
             href="https://birdeye.so/token/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi?chain=solana"
             rel="noreferrer"
@@ -55,7 +71,7 @@ export const HomeView: FC = ({}) => {
             <p className="buy_now">
               <b>View Chart</b>
             </p>
-          </a>
+          </a>*/}
         </div>
       </div>
     </div>

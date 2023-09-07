@@ -6,6 +6,10 @@ const Home: NextPage = (props) => {
   return (
     <div className="container">
       <Head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Pacifico&display=optional"
+          rel="stylesheet"
+        ></link>
         <title>SolarMoon</title>
         <meta name="description" content="SolarMoon" />
       </Head>
