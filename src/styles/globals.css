@@ -11,15 +11,29 @@ body {
   /*font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;*/
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #082827;
-    /*background-image:url("../../public/test.jpeg");
-  background-size: cover;*/
+    /*background-color: #082827;*/
+    background-image:url("../../public/Background1.svg");
+  background-size: cover;
 
 }
 
-/* start */
+p{
+  margin-top:10px;
+}
 
-/* stop */
+.moon{
+  color:#4DF7CC;
+}
+
+.hero_text{
+  font-size:50px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight:900;
+}
+
+.home_content{
+  margin-top: 50px;
+}
 
 .tokenomics{
   margin-top:40px;
@@ -32,7 +46,7 @@ body {
 }
 
 footer{
-  background-color:#082827;
+  background-color:rgb(8, 40, 39, 1);
 }
 
 .border-t-2 {
@@ -46,14 +60,14 @@ footer{
 .stats_1{
   border:1px solid white;
   color:white;
-  border-radius: 15px;
+  border-radius: 50px;
   background:#082827;
   box-shadow: 8px 8px;
 }
 .stats_2{
   border:1px solid white;
   color:white;
-  border-radius: 15px;
+  border-radius: 50px;
   background:#082827;
   box-shadow: 8px 8px;
 }
@@ -144,14 +158,15 @@ text-align:center;
 }
 .buy_now{
   text-align:center;
-    background-color: white; /* Green */
+    background-color: #4DF7CC; /* Green */
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    color:black;
-    margin-bottom:3rem;
+    color:#082827;
+    margin-top:1em;
+    margin-bottom:3em;
     cursor: pointer;
     border-radius:15px;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -169,12 +184,8 @@ text-align:center;
   margin-top:2rem;
 }
 
-.footer{
-  background:#082827 !important;
-}
-
 .navigation{
-  background: #082827 !important;
+  background: rgb(8, 40, 39, 0.5) !important;
 }
 
 a {
