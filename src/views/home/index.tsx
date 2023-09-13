@@ -27,7 +27,7 @@ export const HomeView: FC = ({}) => {
   const { getUserSOLBalance } = useUserSOLBalanceStore();
 
   const solana = "Solana's";
-  const withheld = "'witheld account state'";
+  const withheld = "'Witheld Account State'";
   const token = "'Token-2022'";
 
   useEffect(() => {
@@ -58,19 +58,19 @@ export const HomeView: FC = ({}) => {
             SOLAR<span className="moon">MOON</span>, {solana} FIRST EVER
             Deflationary Token.
           </h1>
-          <p>
+          <p className="homepage_paragraphs">
             Welcome to SolarMoon, {solana} one true moonshot! Using the new
             Token standard on Solana {token} we have created the first ever
             deflationary token on the Solana network. 5% of every transfer is
             taxed and burnt forever!
           </p>
-          <p>
+          <p className="homepage_paragraphs">
             All transfers are taxed and build up in the {withheld} on the
             Token-2022 protocol, the SolarMoon team revoked their access to the{" "}
             {withheld} meaning nobody has access to theses tokens and they are
             locked forever.
           </p>
-          <p>Join the Astronauts today 🚀🌖</p>
+          <p className="homepage_paragraphs">Join the Astronauts today 🚀🌖</p>
           <a
             target="_blank"
             href="https://birdeye.so/token/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi?chain=solana"
@@ -82,14 +82,13 @@ export const HomeView: FC = ({}) => {
           </a>
         </Col>
         <Col>
-          <div>
-            <Image
-              src="/Image_2.svg"
-              alt="Astronaut and Moon"
-              width={500}
-              height={500}
-            ></Image>
-          </div>
+          <Image
+            src="/Image_2.svg"
+            alt="Astronaut and Moon"
+            className="stats_image"
+            width={550}
+            height={550}
+          ></Image>
         </Col>
       </Row>
       {/*<Row>
