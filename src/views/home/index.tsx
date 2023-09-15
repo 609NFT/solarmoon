@@ -81,7 +81,7 @@ export const HomeView: FC = ({}) => {
             </p>
           </a>
         </Col>
-        <Col>
+        <Col className="stats_image">
           <div className="d-flex align-items-center">
             <Image
               src="/Image_2.svg"
