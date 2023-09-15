@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const TokenView: FC = ({}) => {
   return (
-    <div className="tokenomics">
+    <div className="tokenomics p-5">
       <Image
         src="/chart.svg"
         alt="tokenomics diagram"

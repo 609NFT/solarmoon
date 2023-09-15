@@ -66,6 +66,13 @@ body {
 
 .tokenomics{
   margin-top:40px;
+  border:1px solid white;
+  color:white;
+  border-radius: 50px;
+  /*background:#082827;*/
+  background: rgb(255,255,255, 0.2) !important;
+  box-shadow: 6px 6px;
+  margin-bottom:25px;
 }
 
 @media screen and (max-width: 991px) {
