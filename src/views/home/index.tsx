@@ -82,13 +82,15 @@ export const HomeView: FC = ({}) => {
           </a>
         </Col>
         <Col>
-          <Image
-            src="/Image_2.svg"
-            alt="Astronaut and Moon"
-            className="stats_image"
-            width={550}
-            height={550}
-          ></Image>
+          <div className="d-flex align-items-center">
+            <Image
+              src="/Image_2.svg"
+              alt="Astronaut and Moon"
+              className="mx-auto"
+              width={550}
+              height={550}
+            ></Image>
+          </div>
         </Col>
       </Row>
       {/*<Row>

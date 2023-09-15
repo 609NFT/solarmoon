@@ -15,6 +15,25 @@ body {
   background-size: cover;
 }
 
+@layer base {
+  h1 {
+    font-size:32px;
+    margin-top:20px;
+    margin-bottom:25px;
+  }
+  .p_about{
+    margin-bottom:1em;
+  }
+  ul{
+    list-style: initial;
+    margin: initial;
+    padding: 0 0 0 40px;
+  }
+  li{
+    display: list-item;
+  }
+}
+
 .homepage_paragraphs{
   margin-top:10px;
 }
