@@ -38,6 +38,10 @@ body {
   margin-top:10px;
 }
 
+.container {
+  width: 85% !important;
+}
+
 .moon{
   background: -webkit-linear-gradient(#4DF7CC,#3EE566);
   -webkit-background-clip: text;
