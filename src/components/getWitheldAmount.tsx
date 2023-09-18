@@ -35,14 +35,18 @@ function Witheld() {
   return (
     <div>
       <div>
-        <b>Total Burned: </b>
-        {loading ? <>Loading..</> : burned.toLocaleString()} (
-        {loading ? <>Loading..</> : percent.toFixed(2)}%)
-      </div>
-      <div>
-        <b>Remaining Supply: </b>
-        {loading ? <>Loading..</> : remaining.toLocaleString()} (
-        {loading ? <>Loading..</> : remainingPercent.toFixed(2)}%)
+        <ul>
+          <li>
+            <b>Total Burned: </b>
+            {loading ? <>Loading..</> : burned.toLocaleString()} (
+            {loading ? <>Loading..</> : percent.toFixed(2)}%)
+          </li>
+          <li>
+            <b>Remaining Supply: </b>
+            {loading ? <>Loading..</> : remaining.toLocaleString()} (
+            {loading ? <>Loading..</> : remainingPercent.toFixed(2)}%)
+          </li>
+        </ul>
       </div>
     </div>
   );

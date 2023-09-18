@@ -110,11 +110,9 @@ export const StatsView: FC = ({}) => {
                 <li>
                   <Holders />
                 </li>
-                <li>
-                  <Witheld />
-                </li>
-                <li>{/*<AllHolders />*/}</li>
+                {/*<li><AllHolders /></li>*/}
               </ul>
+              <Witheld />
             </div>
           </div>
         </div>
