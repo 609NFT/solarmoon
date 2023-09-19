@@ -68,6 +68,13 @@ export const AppBar: React.FC = () => {
             </Nav.Link>
             <Nav.Link>
               <NavElement
+                label="Play"
+                href="/play"
+                navigationStarts={() => setIsNavOpen(false)}
+              />
+            </Nav.Link>
+            <Nav.Link>
+              <NavElement
                 label="Tokenomics"
                 href="/tokenomics"
                 navigationStarts={() => setIsNavOpen(false)}
@@ -80,6 +87,7 @@ export const AppBar: React.FC = () => {
                 navigationStarts={() => setIsNavOpen(false)}
               />
             </Nav.Link>
+
             {/*<Nav.Link className="ml-auto">
               <WalletMultiButtonDynamic className="btn-ghost solana_price btn-sm rounded-btn text-lg ml-auto" />
             </Nav.Link>*/}

@@ -131,7 +131,7 @@ export const Footer: FC = () => {
             </div>
 
             <div className="mb-6 items-center mx-auto max-w-screen-lg">
-              <h5 className="font-normal tracking-tight  mb-2.5">T-22</h5>
+              <h5 className="font-normal tracking-tight  mb-2.5">TOKEN-22</h5>
 
               <div className="flex flex-col mb-0 gap-2">
                 <Link

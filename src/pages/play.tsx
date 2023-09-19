@@ -1,17 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { AboutView } from "../views";
+import { PlayView } from "../views";
 
-const About: NextPage = (props) => {
+const Play: NextPage = (props) => {
   return (
-    <div className="container">
+    <div className="play_container">
       <Head>
-        <title>About SolarMoon</title>
+        <title>SolarMoon</title>
         <meta name="description" content="Solana's First Deflationary Token." />
       </Head>
-      <AboutView />
+      <PlayView />
     </div>
   );
 };
 
-export default About;
+export default Play;

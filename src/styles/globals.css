@@ -42,6 +42,12 @@ body {
   width: 85% !important;
 }
 
+.play_container{
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 500px;
+}
+
 .moon{
   background: -webkit-linear-gradient(#4DF7CC,#3EE566);
   -webkit-background-clip: text;
