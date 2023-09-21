@@ -34,6 +34,10 @@ body {
   }
 }
 
+.flip_nav{
+  text-align: center;
+}
+
 .homepage_paragraphs{
   margin-top:10px;
 }

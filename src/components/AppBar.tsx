@@ -59,6 +59,13 @@ export const AppBar: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
+            <div className="flip_nav">
+              <p className="text-lg font-medium sm:text-xl">
+                <a className="nav-link" href="https://flip.solarmoon.xyz/">
+                  Play
+                </a>
+              </p>
+            </div>
             <Nav.Link>
               <NavElement
                 label="Stats"
@@ -66,24 +73,17 @@ export const AppBar: React.FC = () => {
                 navigationStarts={() => setIsNavOpen(false)}
               />
             </Nav.Link>
-            <div className="flex flex-row nav-items items-center gap-3">
-              <p className="text-lg font-medium sm:text-xl">
-                <a className="nav-link" href="https://flip.solarmoon.xyz/">
-                  Play
-                </a>
-              </p>
-            </div>
 
             {/*<Nav.Link>
               <NavElement
                 label="Play"
-                href="https://650b9ce09ee1d277fd50a0e2--solarmoonflip.netlify.app/"
+                href="https://flip.solarmoon.xyz"
                 navigationStarts={() => setIsNavOpen(false)}
               />
             </Nav.Link>*/}
             <Nav.Link>
               <NavElement
-                label="Tokenomics"
+                label="Token"
                 href="/tokenomics"
                 navigationStarts={() => setIsNavOpen(false)}
               />
