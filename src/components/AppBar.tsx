@@ -11,6 +11,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import SolPrice from "./getSolanaPrice";
 import WalletDetail from "./getWalletInfo";
+import { NavDropdown } from "react-bootstrap";
 
 const WalletMultiButtonDynamic = dynamic(
   async () =>
@@ -59,13 +60,23 @@ export const AppBar: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <div className="flip_nav">
-              <p className="text-lg font-medium sm:text-xl">
-                <a className="nav-link" href="https://flip.solarmoon.xyz/">
-                  Play
-                </a>
-              </p>
-            </div>
+            <NavDropdown
+              title="Play"
+              id="basic-nav-dropdown"
+              className="text-lg font-medium sm:text-xl flip_nav"
+            >
+              <NavDropdown.Item href="https://flip.solarmoon.xyz/">
+                <div className="flip_nav">Flip</div>
+              </NavDropdown.Item>
+              {/*<NavDropdown.Item href="#action/3.3">
+                  Something
+            </NavDropdown.Item>*/}
+              <NavDropdown.Divider />
+              <NavDropdown.Item disabled href="#" className="flip_nav">
+                Coming Soon
+              </NavDropdown.Item>
+            </NavDropdown>
+
             <Nav.Link>
               <NavElement
                 label="Stats"
@@ -99,17 +110,6 @@ export const AppBar: React.FC = () => {
             {/*<Nav.Link className="ml-auto">
               <WalletMultiButtonDynamic className="btn-ghost solana_price btn-sm rounded-btn text-lg ml-auto" />
             </Nav.Link>*/}
-            {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-  </NavDropdown>*/}
           </Nav>
         </Navbar.Collapse>
       </Container>

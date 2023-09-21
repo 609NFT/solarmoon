@@ -61,7 +61,7 @@ export const HomeView: FC = ({}) => {
             Deflationary Token.
           </h1>
           <p className="homepage_paragraphs">
-            Welcome to SolarMoon, the first deflationary token on the Solana
+            Welcome to SolarMoon, the FIRST deflationary token on the Solana
             network using the new {token} standard. A 5% fee on each transfer
             goes to a {withheld}, which the SolarMoon team has irrevocably
             relinquished access to, ensuring that these tokens are permanently

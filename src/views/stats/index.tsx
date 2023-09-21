@@ -113,6 +113,18 @@ export const StatsView: FC = ({}) => {
                 {/*<li><AllHolders /></li>*/}
               </ul>
               <Witheld />
+              {/*<a
+                className="twitter-share-button"
+                href={
+                  "https://twitter.com/intent/tweet?text=" +
+                  <Witheld /> +
+                  "test"
+                }
+                target="_blank"
+                rel="noreferrer"
+              >
+                Tweet
+              </a>*/}
             </div>
           </div>
         </div>
