@@ -32,7 +32,6 @@
     "chart.js": "^4.3.3",
     "daisyui": "^1.24.3",
     "date-fns": "^2.29.3",
-    "gamba": "^0.8.5",
     "immer": "^9.0.12",
     "jquery": "^3.7.1",
     "mdb-react-ui-kit": "^6.2.0",

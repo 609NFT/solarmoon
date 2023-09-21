@@ -66,13 +66,24 @@ export const AppBar: React.FC = () => {
                 navigationStarts={() => setIsNavOpen(false)}
               />
             </Nav.Link>
-            <Nav.Link>
+            <div className="flex flex-row nav-items items-center gap-3">
+              <p className="text-lg font-medium sm:text-xl">
+                <a
+                  className="nav-link"
+                  href="https://650b9ce09ee1d277fd50a0e2--solarmoonflip.netlify.app/"
+                >
+                  Play
+                </a>
+              </p>
+            </div>
+
+            {/*<Nav.Link>
               <NavElement
                 label="Play"
-                href="/play"
+                href="https://650b9ce09ee1d277fd50a0e2--solarmoonflip.netlify.app/"
                 navigationStarts={() => setIsNavOpen(false)}
               />
-            </Nav.Link>
+            </Nav.Link>*/}
             <Nav.Link>
               <NavElement
                 label="Tokenomics"

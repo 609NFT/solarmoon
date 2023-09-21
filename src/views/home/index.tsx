@@ -55,7 +55,7 @@ export const HomeView: FC = ({}) => {
       <Row className="home_content">
         <Col>
           <h1 className="hero_text">
-            SOLAR<span className="moon">MOON</span>, {solana} FIRST EVER
+            Solar<span className="moon">Moon</span>, {solana} FIRST EVER
             Deflationary Token.
           </h1>
           <p className="homepage_paragraphs">

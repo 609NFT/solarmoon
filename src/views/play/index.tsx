@@ -4,15 +4,7 @@ import React from "react";
 import Iframe from "react-iframe";
 
 export const PlayView: FC = ({}) => {
-  return (
-    <Iframe
-      url="https://smflip-wixg.vercel.app/"
-      width="100%"
-      height="100%"
-      display="block"
-      position="relative"
-    />
-  );
+  return <div>hello</div>;
 };
 
 /*const { publicKey } = useWallet();
