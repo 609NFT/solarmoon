@@ -68,10 +68,7 @@ export const AppBar: React.FC = () => {
             </Nav.Link>
             <div className="flex flex-row nav-items items-center gap-3">
               <p className="text-lg font-medium sm:text-xl">
-                <a
-                  className="nav-link"
-                  href="https://solarmoonflip.netlify.app/"
-                >
+                <a className="nav-link" href="https://flip.solarmoon.xyz/">
                   Play
                 </a>
               </p>
