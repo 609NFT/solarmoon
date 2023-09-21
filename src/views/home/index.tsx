@@ -55,22 +55,22 @@ export const HomeView: FC = ({}) => {
       <Row className="home_content">
         <Col>
           <h1 className="hero_text">
-            Solar<span className="moon">Moon</span>, {solana} FIRST EVER
+            {/*Solar<span className="moon">Moon</span>, {solana} FIRST EVER
+            Deflationary Token.*/}
+            Redefining Value: <span className="moon">{solana}</span> Premier
             Deflationary Token.
           </h1>
           <p className="homepage_paragraphs">
-            Welcome to SolarMoon, {solana} one true moonshot! Using the new
-            Token standard on Solana {token} we have created the first ever
-            deflationary token on the Solana network. 5% of every transfer is
-            taxed and burnt forever!
+            Welcome to SolarMoon, the first deflationary token on the Solana
+            network using the new {token} standard. A 5% fee on each transfer
+            goes to a {withheld}, which the SolarMoon team has irrevocably
+            relinquished access to, ensuring that these tokens are permanently
+            locked and inaccessible.
           </p>
           <p className="homepage_paragraphs">
-            All transfers are taxed and build up in the {withheld} on the
-            Token-2022 protocol, the SolarMoon team revoked their access to the{" "}
-            {withheld} meaning nobody has access to theses tokens and they are
-            locked forever.
+            We cordially invite you to become a part of our Astronaut community
+            and contribute to this groundbreaking endeavor. 🚀🌖
           </p>
-          <p className="homepage_paragraphs">Join the Astronauts today 🚀🌖</p>
           <a
             target="_blank"
             href="https://birdeye.so/token/2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi?chain=solana"
