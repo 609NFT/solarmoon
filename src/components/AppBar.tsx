@@ -70,7 +70,7 @@ export const AppBar: React.FC = () => {
               <p className="text-lg font-medium sm:text-xl">
                 <a
                   className="nav-link"
-                  href="https://650b9ce09ee1d277fd50a0e2--solarmoonflip.netlify.app/"
+                  href="https://solarmoonflip.netlify.app/"
                 >
                   Play
                 </a>
