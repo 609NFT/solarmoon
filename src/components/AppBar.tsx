@@ -107,9 +107,9 @@ export const AppBar: React.FC = () => {
               />
             </Nav.Link>
 
-            {/*<Nav.Link className="ml-auto">
+            <Nav.Link className="ml-auto">
               <WalletMultiButtonDynamic className="btn-ghost solana_price btn-sm rounded-btn text-lg ml-auto" />
-            </Nav.Link>*/}
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

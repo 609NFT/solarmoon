@@ -2,9 +2,14 @@ import { FC, useEffect, useState } from "react";
 import { ConnectionProvider } from "@solana/wallet-adapter-react";
 import React from "react";
 import Iframe from "react-iframe";
+import Domains from "components/getMoonDomain";
 
 export const PlayView: FC = ({}) => {
-  return <div>hello</div>;
+  return (
+    <div>
+      <Domains />
+    </div>
+  );
 };
 
 /*const { publicKey } = useWallet();
