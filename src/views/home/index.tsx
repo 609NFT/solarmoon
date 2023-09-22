@@ -57,7 +57,7 @@ export const HomeView: FC = ({}) => {
           <h1 className="hero_text">
             {/*Solar<span className="moon">Moon</span>, {solana} FIRST EVER
             Deflationary Token.*/}
-            Redefining Value: <span className="moon">{solana}</span> Premier
+            Solar<span className="moon">Moon</span>: {solana} Premier
             Deflationary Token.
           </h1>
           <p className="homepage_paragraphs">
@@ -68,8 +68,7 @@ export const HomeView: FC = ({}) => {
             locked and inaccessible.
           </p>
           <p className="homepage_paragraphs">
-            We cordially invite you to become a part of our Astronaut community
-            and contribute to this groundbreaking endeavor. 🚀🌖
+            Join the $MOON mission today! 🚀
           </p>
           <a
             target="_blank"
