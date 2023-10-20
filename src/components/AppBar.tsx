@@ -44,7 +44,7 @@ export const AppBar: React.FC = () => {
             </Link>
           </div>
         </Navbar.Brand>
-        <div className="solana_price">
+        {/*<div className="solana_price">
           <Image
             src="/solana.png"
             alt="solana logo"
@@ -55,7 +55,7 @@ export const AppBar: React.FC = () => {
         </div>
         <div className="solana_price">
           <SolPrice />
-        </div>
+  </div>*/}
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
