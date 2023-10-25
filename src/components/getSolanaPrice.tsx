@@ -5,7 +5,8 @@ import { useEffect, useState, useRef } from "react";
 
 const config = {
   headers: {
-    token: "2d8edb01ad4944b5a9ebf46346b1eaf7",
+    "x-chain": "solana",
+    "X-API-KEY": "2d8edb01ad4944b5a9ebf46346b1eaf7",
   },
 };
 

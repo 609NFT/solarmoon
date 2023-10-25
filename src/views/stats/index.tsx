@@ -103,15 +103,18 @@ export const StatsView: FC = ({}) => {
           </div>
           <div className="stats_2 col p-5 m-3">
             <div>
-              {/*<ul>
+              <ul>
                 <li>
                   <MoonPrice />
                 </li>
-                <li>
+
+                {/*<li>
                   <Holders />
                 </li>
-                <li><AllHolders /></li>
-              </ul>*/}
+                <li>
+                  <AllHolders />
+                </li>*/}
+              </ul>
               <Witheld />
               {/*<a
                 className="twitter-share-button"
