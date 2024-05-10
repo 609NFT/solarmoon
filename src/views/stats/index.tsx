@@ -71,7 +71,7 @@ export const StatsView: FC = ({}) => {
                     rel="noreferrer"
                     href="https://solscan.io/tx/4WBgzYDpyf6e3h4CT8kXnAMAfXpi8kKxaakTALz2pj67cR7DbbUtpc2JpCKrTEERRiXpMRexMGFmDrCokBBHBM7B"
                   >
-                    TXN
+                    View Transaction
                   </a>
                 </li>
                 <li>
@@ -81,7 +81,7 @@ export const StatsView: FC = ({}) => {
                     rel="noreferrer"
                     target="_blank"
                   >
-                    FluxBeam
+                    View on FluxBeam
                   </a>
                 </li>
                 <li>
@@ -91,7 +91,7 @@ export const StatsView: FC = ({}) => {
                     rel="noreferrer"
                     target="_blank"
                   >
-                    Account
+                    View Account
                   </a>
                 </li>
                 <li>
