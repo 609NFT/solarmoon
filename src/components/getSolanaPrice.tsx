@@ -24,7 +24,7 @@ function SolPrice() {
       setLoading(true);
       axios
         .get(
-          "https://public-api.birdeye.so/public/price?address=So11111111111111111111111111111111111111112",
+          "https://public-api.birdeye.so/defi/price?address=So11111111111111111111111111111111111111112",
           config
         )
         .then((res) => {

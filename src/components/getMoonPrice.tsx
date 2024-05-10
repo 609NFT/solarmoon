@@ -20,7 +20,7 @@ function MoonPrice() {
       setLoading(true);
       axios
         .get(
-          "https://public-api.birdeye.so/public/price?address=2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi",
+          "https://public-api.birdeye.so/defi/price?address=2kMpEJCZL8vEDZe7YPLMCS9Y3WKSAMedXBn7xHPvsWvi",
           config
         )
         .then((res) => {
